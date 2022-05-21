@@ -14,8 +14,8 @@ function [fp, index] = multiplicative_inverse_NTRU(f, p)
     v3s = size(v3, 2);
     while any(v3 - zeros(1, v3s)) == 1
         [qq, t3] = division_poly(d, v3, p);
-    %     qv1 = multiplication_poly(qq, v1, p);
-        qv1 =multiplication_NTRU(qq, v1, p);
+        % qv1 = multiplication_poly(qq, v1, p);
+        qv1 = multiplication_NTRU(qq, v1, p);
         t1 = addition_NTRU(u, -qv1, p);
         u = v1;
         d = v3;
