@@ -215,6 +215,4 @@ R_message = char(R_message);
 fprintf('the original message is: %s\n', message);
 fprintf('the recovery message is: %s\n', R_message);
 %
-%
-
 
